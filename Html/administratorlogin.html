@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Manager login</title>
+    <link rel="stylesheet" href="Css/administratorlogin.css">
+</head>
+<body>
+<header>
+    <h2>Manage your staff here Sir!!</h2>
+</header>
+<form class="form1" action="/administratorlogin" method="POST">
+    <div class="name">
+        <label>Username: </label><br>
+        <input type="username" class="form-control" id="username" name="username" placeholder="Username">
+    </div><br>
+    <div class="pass">
+        <label>Password:</label><br>
+        <input type="password" id="password"  name="password" placeholder="Password">
+    </div>
+    <br>
+    <button type="submit" onclick="sign()" >Sign-in</button>
+</form>
+<div class="return">
+    <h3> Want to return <a href="/mainPage">home</a>? </h3>
+</div>
+<script src="app.js"></script>
+
+</body>
+</html>

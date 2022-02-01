@@ -1,0 +1,113 @@
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    background-color: #f7f7f7;
+    /* Margin bottom by footer height */
+}
+
+.nav-link {
+    /* Forcing color update for Tota11y compliance */
+    color: white!important;
+}
+
+.btn {
+    /* Forcing color update for Tota11y compliance */
+    color: white;
+    background-color: #0072ee!important;
+}
+
+footer a {
+    /* Forcing color update for Tota11y compliance */
+    color: #78a0ff;
+}
+
+.list-group a {
+    /* Forcing color update for Tota11y compliance */
+    color: #1373e9;
+}
+
+.item a {
+    /* Forcing color update for Tota11y compliance */
+    color: #006ee5;
+}
+
+.list-unstyled a {
+    /* Forcing color update for Tota11y compliance */
+    color: #0072ee;
+}
+
+.searchBar {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.list-group {
+    margin-bottom: 20px;
+}
+
+.portfolio-item {
+    margin-bottom: 30px;
+}
+
+.card-img-top {
+    height: 400px;
+}
+
+.splash {
+    height: 35em;
+    padding-top: 9em;
+    background: url("../img/banner.jpg") no-repeat center center;
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+}
+
+.splash .text-muted {
+    color: white!important;
+}
+
+.error-template {
+    padding: 40px 15px;
+    text-align: center;
+}
+
+.error-details {
+    text-align: left
+}
+
+.error-actions {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.error-actions .btn {
+    margin-right: 10px;
+}
+
+.topBottomOffset {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.topOffset {
+    margin-top: 20px;
+}
+
+.bottomOffset {
+    margin-bottom: 20px;
+}
+
+@media (min-width: 992px) {
+    body {
+        padding-top: 56px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1400px;
+    }
+}

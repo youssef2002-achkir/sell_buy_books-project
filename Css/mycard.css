@@ -1,0 +1,92 @@
+.myCart{
+    background-color: deepskyblue;
+}
+.myCart table{
+    width: 100%;
+}
+.myCart table thead{
+    position: relative;
+    right: 45px;
+}
+#quantite{
+    position: relative;
+    left: 80px;
+}
+#delete{
+    width: 80px;
+    height: 50px;
+    background-color: blue;
+    cursor: pointer;
+}
+#delete:hover{
+    background-color: aqua;
+}
+nav{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    background: rgb(142, 122, 122) ;
+    border-radius: 12px;
+
+}
+
+ul{
+    display: flex;
+}
+#nav0{
+    display: block;
+    width: 550px;
+    height: 2px;
+    text-align: center;
+    line-height: 50px;
+    color: cyan;
+    font-size: 40px;
+    text-decoration: none;
+    font-weight: bolder;
+}
+#nav1,#nav2,#nav3,#nav4,#nav5,#nav6 {
+    display: block;
+    width: 116px;
+    height: 2px;
+    text-align: center;
+    line-height: 50px;
+    color: skyblue;
+    font-size: 19px;
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+h1{
+    width: 100%;
+    font-size: 30px;
+    font-family: Georgia;
+    position: relative;
+    left: 30%;
+}
+.slide-container{
+    width: 1000px;
+    height: 500px;
+    column-count: 1;
+
+
+
+
+}
+.slide-container .img{
+    width: 300px;
+    height: 400px;
+    width: 300px;
+    height: 400px;
+    background-color: deepskyblue;
+    display: inline;
+
+
+}
+.slide-container .img img{
+    width: 300px;
+    height: 400px;
+
+
+
+}

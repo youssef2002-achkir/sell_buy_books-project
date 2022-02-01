@@ -1,0 +1,59 @@
+<div class="container" style="margin-top: 20px">
+    <p class="h3">
+        Shopping Cart</p>
+    <hr />
+
+    <div class="row">
+        <div class="col-md-7">
+            {{#each cart}}
+            <div class="card" style="margin-bottom: 20px">
+                <div class="row">
+                    <div class="col-md-4">
+                        <img src="{{this.book.imageURL.thumbnail}}" class="w-100" alt="{{this.book.title}}">
+                    </div>
+
+                    <div class="col-md-8 px-3">
+                        <div class="card-block px-3">
+                            <p class="h4 card-title">
+                                <a href="/search/isbn/{{this.book.isbn}}">{{this.book.title}}</a>
+                            </p>
+                            <p class="card-text">
+                                <small>{{this.book.textSnippet}}</small>
+                            </p>
+                            <form action="shoppingCart/update/{{this.book.isbn}}" method="post">
+                                <p class="lead">Quantity:
+                                    <label class="sr-only" for="quantity">Quantity...</label>
+                                    <input type="text" name="quantity" id="quantity" value="{{this.book.quantity}}">
+                                    <br>
+                                    <div class="btn-group btn-group-sm" role="group">
+                                        <button type="submit" class="btn btn-outline-success" name="update" value="update">Update</button>
+                                        <button type="submit" class="btn btn-outline-danger" name="remove" value="remove">Remove</button>
+                                    </div>
+                                </p>
+                            </form>
+                            <p class="lead">Price: ${{this.book.price}}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {{/each}}
+        </div>
+
+        <div class="col-md-5">
+
+            <!-- Search Widget -->
+            <div class="card my-4">
+                <p class="h5 card-header">Cart Details</p>
+                <div class="card-body">
+                    <p class="h5">Number of Items: {{numOfItems}}</p>
+                    <p class="h5">Total: ${{totalAmount}}</p>
+
+                    <form action="confirmation" method="get">
+                        <button type="submit" class="btn btn-primary btn-lg btn-block">Checkout</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>

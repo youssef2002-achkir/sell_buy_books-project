@@ -1,0 +1,92 @@
+html body {
+    background-image: url("4.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+ .myHead {
+
+     width: 100%;
+     height: 60px;
+ }
+ .myHead h1 {
+     color: antiquewhite;
+     font-family: "Book Antiqua";
+     line-height: 60px;
+ }
+ .myHead a{
+     position: relative;
+     left: 44%;
+     color: green;
+     font-family: "Bookman Old Style";
+     text-decoration: none;
+     line-height: 60px;
+     font-weight: bold;
+     font-size: 30px;
+ }
+ .myHead h1, .myHead a {
+     display: inline;
+ }
+ .main{
+
+     width: 100%;
+     height: 500px;
+ }
+ .main button{
+     width: 200px;
+     height: 100px;
+     background-color: chocolate;
+     font-size: 30px;
+     color: aqua;
+     font-weight: bold;
+     position: relative;
+     left: 27%;
+     top: 30%;
+     text-decoration: none;
+
+ }
+ .main button a{
+     text-decoration: none;
+     color: aqua;
+ }
+
+
+h1 span{
+    position: relative;
+    top: 20px;
+    display: inline-block;
+    animation: bounce .3s ease infinite alternate;
+    font-family: 'Titan One' cursive;
+    font-size: 70px;
+    color: red;
+    text-shadow: 0 1px yellow,
+    0 2px yellow,
+    0 3px yellow,
+    0 4px yellow,
+    0 5px yellow,
+    0 6px 0 transparent,
+    0 7px 0 transparent,
+    0 8px 0 transparent,
+    0 9px 0 transparent,
+    0 10px 10px black;
+
+}
+h1 span:nth-child(1){animation-delay: .1s;}
+h1 span:nth-child(2){animation-delay: .2s;}
+h1 span:nth-child(3){animation-delay: .3s;}
+h1 span:nth-child(4){animation-delay: .4s;}
+h1 span:nth-child(5){animation-delay: .5s;}
+h1 span:nth-child(5){animation-delay: .6s;}
+@keyframes bounce {
+    100%{
+        top: -20px;
+        text-shadow: 0 1px 0 white,
+        0 2px 0 white,
+        0 3px 0 white,
+        0 4px 0 white,
+        0 5px 0 white,
+        0 6px 0 white,
+        0 50px 25px black;
+    }
+}
